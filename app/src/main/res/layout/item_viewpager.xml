@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/emptyLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/emptyLayout">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100.0dip"
+            android:layout_height="100.0dip"
+            android:layout_centerInParent="true" />
+
+        <com.ssvmakers.amzo.autobuyscripts.Utils.CustomTextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30.0dip"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textBig" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.ssvmakers.amzo.autobuyscripts.Utils.CustomTextView
+                android:id="@+id/text1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textBig"
+                android:textStyle="bold" />
+
+            <com.ssvmakers.amzo.autobuyscripts.Utils.CustomTextView
+                android:id="@+id/text2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20.0dip"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fab_margin" />
+
+            <com.ssvmakers.amzo.autobuyscripts.Utils.CustomTextView
+                android:id="@+id/text3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30.0dip"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

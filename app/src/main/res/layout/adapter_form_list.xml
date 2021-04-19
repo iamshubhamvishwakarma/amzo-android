@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/formMainCard"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/formPrimaryCard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/colorBlue"
+        app:cardCornerRadius="10.0dip"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip">
+
+            <com.ssvmakers.amzo.autobuyscripts.Utils.CustomTextView
+                android:id="@+id/headerText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Need Help!"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textBig"
+                android:textStyle="bold" />
+
+            <com.ssvmakers.amzo.autobuyscripts.Utils.CustomTextView
+                android:id="@+id/formMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerText"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/formButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/formMessage"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/rounded_corner_white"
+                android:minHeight="0.0dip"
+                android:padding="10.0dip"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/formSecondaryCard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5.0dip"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip">
+
+            <com.ssvmakers.amzo.autobuyscripts.Utils.CustomTextView
+                android:id="@+id/secondHeaderText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Need Help!"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textBig"
+                android:textStyle="bold" />
+
+            <com.ssvmakers.amzo.autobuyscripts.Utils.CustomTextView
+                android:id="@+id/formSubmitMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondHeaderText"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:text="@string/which_phone_you_wanna_buy"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/phone_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/formSubmitMessage"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/phone_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8.0dip" />
+
+            <Button
+                android:id="@+id/formSubmitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_edit_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/rounded_corner_white"
+                android:minHeight="0.0dip"
+                android:padding="10.0dip"
+                android:text="@string/request_now"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

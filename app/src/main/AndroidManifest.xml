@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ssvmakers.amzo.autobuyscripts"
+    android:versionCode="48"
+    android:versionName="2.5.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Utils.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label">
+        <activity
+            android:name=".Activities.PreSearchActivity"
+            android:label="@string/title_activity_pre_search"
+            android:theme="@style/AppTheme.appcompat"></activity>
+        <activity
+            android:name=".Activities.NormalWebViewActivity"
+            android:label="@string/title_activity_normal_web_view"
+            android:theme="@style/AppTheme.appcompat" />
+        <activity
+            android:name=".Activities.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme.appcompat" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:label="Flash Sale Helper"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.TipsWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Main2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Activities.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.OnBoardScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TermsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.AutoCheckOutFirst"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.AutoCheckOutSecond"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b0e6c8a5f990a5df7377ad7376c0439b31b05eaa" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.ssvmakers.amzo.autobuyscripts.com.squareup.picasso"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name="com.google.android.gms.ads.AdActivity" -->
+        <!-- android:exported="false" -->
+        <!-- android:theme="@android:style/Theme.Translucent" /> -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

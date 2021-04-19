@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "89687255491",
+    "project_id": "amzoautobuy",
+    "storage_bucket": "amzoautobuy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89687255491:android:0d20ca3b1d64e376b03576",
+        "android_client_info": {
+          "package_name": "com.ssvmakers.amzo.autobuyscripts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89687255491-23v2rn7ojrag0pb8jhdtger8vh5nrf4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ3-1RPDSs7qR_EbplJ-cHQcMcfLDqxy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89687255491-23v2rn7ojrag0pb8jhdtger8vh5nrf4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

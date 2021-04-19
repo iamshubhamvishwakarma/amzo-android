@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/fk_setup"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Flipkart Login" />
+        <item
+            android:id="@+id/amazon_setup"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Amazon.in Setup" />
+        <item
+            android:id="@+id/mi_setup"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Mi.com Setup"
+            android:visible="false" />
+    </group>
+    <item android:title="Upcoming Phones">
+        <menu>
+            <item
+                android:id="@+id/nokia6"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Nokia 6"
+                android:visible="false" />
+            <item
+                android:id="@+id/honor9lblack3"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Honor 9 Lite Black 3GB" />
+            <item
+                android:id="@+id/honor9lblack4"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Honor 9 Lite Black 4GB" />
+            <item
+                android:id="@+id/honor9lblue3"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Honor 9 Lite Blue 3GB" />
+            <item
+                android:id="@+id/honor9lblue4"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Honor 9 Lite Blue 4GB" />
+            <item
+                android:id="@+id/mia1black"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Mi A1 - Black" />
+            <item
+                android:id="@+id/mia1gold"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Mi A1 - Gold" />
+            <item
+                android:id="@+id/redmi5ablack2"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi 5A Black 2GB" />
+            <item
+                android:id="@+id/redmi5agold2"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi 5A Gold 2GB" />
+            <item
+                android:id="@+id/redmi5ablack3"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi 5A Black 3GB" />
+            <item
+                android:id="@+id/redmi5agold3"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi 5A Gold 3GB" />
+            <item
+                android:id="@+id/redmiy1lite"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi Y1 Lite" />
+            <item
+                android:id="@+id/redmiy1"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi Y1" />
+            <item
+                android:id="@+id/rn4gold2"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi Note 4 - Gold 2 GB RAM"
+                android:visible="false" />
+            <item
+                android:id="@+id/rn4black2"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi Note 4 - Black 2 GB RAM"
+                android:visible="false" />
+            <item
+                android:id="@+id/rn4darkgrey32"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi Note 4 - D.Grey 3 GB RAM"
+                android:visible="false" />
+            <item
+                android:id="@+id/rn4gold32"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi Note 4 - Gold 3 GB RAM"
+                android:visible="false" />
+            <item
+                android:id="@+id/rn4black32"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi Note 4 - Black 3 GB RAM"
+                android:visible="false" />
+            <item
+                android:id="@+id/rn4darkgrey64"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi Note 4 - D.Grey 4 GB RAM"
+                android:visible="false" />
+            <item
+                android:id="@+id/rn4gold64"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi Note 4 - Gold 4 GB RAM"
+                android:visible="false" />
+            <item
+                android:id="@+id/rn4black64"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi Note 4 - Black 4 GB RAM"
+                android:visible="false" />
+            <item
+                android:id="@+id/redmi3ssilver"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi 3S - Silver"
+                android:visible="false" />
+            <item
+                android:id="@+id/redmi3sgold"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi 3S - Gold"
+                android:visible="false" />
+            <item
+                android:id="@+id/redmi3sprimedarkgrey"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi 3S Prime - Dark Grey"
+                android:visible="false" />
+            <item
+                android:id="@+id/redmi3sprimesilver"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi 3S Prime - Silver"
+                android:visible="false" />
+            <item
+                android:id="@+id/redmi3sprimegold"
+                android:icon="@drawable/ic_smartphone_black_24dp"
+                android:title="Redmi 3S Prime - Gold"
+                android:visible="false" />
+        </menu>
+    </item>
+    <item android:title="Support Us">
+        <menu>
+            <item
+                android:id="@+id/rateus"
+                android:icon="@drawable/ic_star_rate_black_18dp"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+</menu>
