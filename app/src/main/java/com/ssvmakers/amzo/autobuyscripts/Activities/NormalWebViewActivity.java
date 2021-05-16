@@ -103,6 +103,10 @@ public class NormalWebViewActivity extends AppCompatActivity {
         super.onBackPressed();
     }
 
+    public void refresh(View view) {
+        this.webView.reload();
+    }
+
     private class CustomeGestureDetector extends GestureDetector.SimpleOnGestureListener {
         @Override
         public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {

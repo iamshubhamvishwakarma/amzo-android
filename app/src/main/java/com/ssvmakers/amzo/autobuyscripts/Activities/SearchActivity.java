@@ -70,9 +70,6 @@ public class SearchActivity extends AppCompatActivity {
         onBackPressed();
     }
 
-    public void startSearch(View view) {
-        startActivity(new Intent(SearchActivity.this, PreSearchActivity.class));
-    }
 
     public void getSearchUrls(String query) {
         loadingLayout.setVisibility(View.VISIBLE);

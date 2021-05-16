@@ -122,6 +122,7 @@ public class ItemDetailsAdapter extends Adapter<ItemDetailsAdapter.MyViewHolder>
                 stringBuilder.append("---0");
                 Log.e("--->", stringBuilder.toString());
                 FlashSaleModel FlashSaleModel2 = this.finalList.get(i);
+                myViewHolder.store.setText(FlashSaleModel2.getSite());
                 myViewHolder.y.setCardBackgroundColor(Color.parseColor(this.finalList.get(i).getPrimaryColor()));
                 myViewHolder.s.setText(FlashSaleModel2.getName());
                 myViewHolder.p.setText(FlashSaleModel2.getName());
@@ -186,6 +187,7 @@ public class ItemDetailsAdapter extends Adapter<ItemDetailsAdapter.MyViewHolder>
                         textView.setText(stringBuilder3.toString());
                     }
                 }.start();
+
                 Picasso.get().load(FlashSaleModel2.getImage()).into(myViewHolder.n);
                 setRecyclerViewLayoutManager(myViewHolder.q);
                 myViewHolder.q.setAdapter(new CardRecyclerAdapter(this.context, FlashSaleModel2.getVariantModels(), FlashSaleModel2.getName()));
@@ -306,7 +308,7 @@ public class ItemDetailsAdapter extends Adapter<ItemDetailsAdapter.MyViewHolder>
         CardView E;
         CardView F;
         Button G;
-        TextView H;
+        TextView H,store;
         EditText I;
         Button J;
         ImageView n;
@@ -327,7 +329,7 @@ public class ItemDetailsAdapter extends Adapter<ItemDetailsAdapter.MyViewHolder>
             super(view);
             this.u = view.findViewById(R.id.layout);
             this.v = view.findViewById(R.id.headerText);
-            this.w = view.findViewById(R.id.textView);
+
             this.B = view.findViewById(R.id.ad_card);
             this.C = view.findViewById(R.id.adImage);
             this.x = view.findViewById(R.id.buttonPanel);
@@ -336,6 +338,7 @@ public class ItemDetailsAdapter extends Adapter<ItemDetailsAdapter.MyViewHolder>
             this.p = view.findViewById(R.id.variant_phone_name);
             this.o = view.findViewById(R.id.text);
             this.r = view.findViewById(R.id.cardItem);
+            this.store = view.findViewById(R.id.store);
             this.s = view.findViewById(R.id.phone_name);
             this.q = view.findViewById(R.id.variantRecycler);
             this.t = view.findViewById(R.id.sales_time);

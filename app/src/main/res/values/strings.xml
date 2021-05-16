@@ -49,7 +49,6 @@
     <string name="checkOut_saved">You have only one address saved in your flipkart account</string>
     <string name="click_add"><u><b>Click here to add</b></u></string>
     <string name="click_here"><u><b>Click here to check</b></u></string>
-    <string name="com.crashlytics.android.build_id">40f10c5b-7127-472f-8e03-1c68c8da07f6</string>
     <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
     <string name="flash_id">id</string>
     <string name="flash_image">image</string>
@@ -63,7 +62,6 @@
     <string name="form_request_success">We got your wish :)</string>
     <string name="gotit">Got It</string>
     <string name="gotoBack">Back to app</string>
-    <string name="interstitial_full_screen">ca-app-pub-3800086660783473/8248505432</string>
     <string name="isStart">isStart</string>
     <string name="link">link</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -138,13 +136,10 @@
     <string name="tab_flipkart">Flipkart</string>
     <string name="tab_amazon">Amazon</string>
     <string name="tab_ajio">Ajio</string>
-    <string name="tab_snapdeal">Snapdeal</string>
     <string name="tab_myntra">Myntra</string>
     <string name="title_activity_normal_web_view">NormalWebViewActivity</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
     <string name="title_activity_pre_search">PreSearchActivity</string>
     <string name="tata_cliq">Tata Cliq</string>
 </resources>

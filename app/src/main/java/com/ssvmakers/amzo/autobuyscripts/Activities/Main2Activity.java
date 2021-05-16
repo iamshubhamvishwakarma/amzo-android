@@ -10,8 +10,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,10 +36,12 @@ import com.ssvmakers.amzo.autobuyscripts.Adapter.GenricRecyclerAdapter;
 import com.ssvmakers.amzo.autobuyscripts.Adapter.ItemDetailsAdapter;
 import com.ssvmakers.amzo.autobuyscripts.Adapter.SliderAdapter;
 import com.ssvmakers.amzo.autobuyscripts.Adapter.StoreAdapter;
+import com.ssvmakers.amzo.autobuyscripts.Adapter.TipsAdapter;
 import com.ssvmakers.amzo.autobuyscripts.Model.Deal;
 import com.ssvmakers.amzo.autobuyscripts.Model.FlashSaleModel;
 import com.ssvmakers.amzo.autobuyscripts.Model.SliderItem;
 import com.ssvmakers.amzo.autobuyscripts.Model.Store;
+import com.ssvmakers.amzo.autobuyscripts.Model.TipsModel;
 import com.ssvmakers.amzo.autobuyscripts.Model.VariantModel;
 import com.ssvmakers.amzo.autobuyscripts.R;
 import com.ssvmakers.amzo.autobuyscripts.Utils.ApplicationController;
@@ -75,7 +77,7 @@ public class Main2Activity extends AppCompatActivity {
     List<Store> storeList;
     List<Deal> dealList;
     ItemDetailsAdapter flashSaleAdapter;
-    RecyclerView flashSaleRecycler, storeRecycler, dealRecycler;
+    RecyclerView flashSaleRecycler, storeRecycler, dealRecycler, tipsRecycler;
     StoreAdapter storeAdapter;
     SwitchCompat v;
     FlashSaleModel w;
@@ -83,9 +85,10 @@ public class Main2Activity extends AppCompatActivity {
     private SliderAdapter sliderAdapter;
     //    private String adUrl = "https://fsh.lootalert.in/ads";
 //    private String deviceUrl = "https://fsh.lootalert.in/infobox?versionCode=";
-    private FrameLayout loadingLayout;
+    private RelativeLayout loadingLayout;
     private TextView sampText;
     private ImageView search_icon;
+    private ArrayList tipsModelsList;
 
 
     /* Access modifiers changed, original: protected */
@@ -107,13 +110,14 @@ public class Main2Activity extends AppCompatActivity {
         this.flashSaleRecycler = findViewById(R.id.flashcards);
         this.storeRecycler = findViewById(R.id.storeRecycler);
         this.dealRecycler = findViewById(R.id.dealRecycler);
+        this.tipsRecycler = findViewById(R.id.tipsRecycler);
 //        this.search_icon = findViewById(R.id.search_icon);
         ((ShimmerFrameLayout) findViewById(R.id.shimmer_view_container)).startShimmer();
         saleListFinal = new ArrayList<>();
 //        this.saleList1 = new ArrayList();
-//        this.tipsModels = new ArrayList();
-//        this.tipsModels.add(new TipsModel(getString(R.string.tips_msg_2), getString(R.string.quick_tips), "", "#9f00ff", ""));
-//        this.tipsModels.add(new TipsModel("Do you want to know our policies regarding the collection, use, and disclosure of personal data?", "Privacy Policy", "Click here to read", "#ff9800", "https://FlashSaleModel.co.in/privacy"));
+        this.tipsModelsList = new ArrayList();
+        this.tipsModelsList.add(new TipsModel(getString(R.string.tips_msg_2), getString(R.string.quick_tips), "", "#9f00ff", ""));
+        this.tipsModelsList.add(new TipsModel("Do you want to know our policies regarding the collection, use, and disclosure of personal data?", "Privacy Policy", "Click here to read", "#ff9800", "https://privacy.amzo.citbit.in/"));
 //        this.s = new ArrayList();
 //        this.s.add(new FormModel(getString(R.string.form_model_message), "Let us know", "#2c3e50"));
 //        new GetDeviceList(this, (byte) 0).execute(new Void[0]);
@@ -124,6 +128,8 @@ public class Main2Activity extends AppCompatActivity {
         setRecyclerViewLayoutManager(this.flashSaleRecycler);
         setStoreRecyclerViewLayoutManager(this.storeRecycler);
         setStoreRecyclerViewLayoutManager(this.dealRecycler);
+        setStoreRecyclerViewLayoutManager(this.tipsRecycler);
+        tipsRecycler.setAdapter(new TipsAdapter(this, tipsModelsList));
         long j = getSharedPreferences("mypref", 0).getLong(getString(R.string.time), 0);
         if (j != 0) {
             Date date = new Date();
@@ -260,9 +266,7 @@ public class Main2Activity extends AppCompatActivity {
         recyclerView.scrollToPosition(findFirstCompletelyVisibleItemPosition);
     }
 
-    public void startSearchActivity() {
-        Main2Activity.this.startActivity(new Intent(Main2Activity.this, PreSearchActivity.class));
-    }
+
 
 
     public void removeLastItem() {

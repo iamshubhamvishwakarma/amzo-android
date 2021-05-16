@@ -24,6 +24,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Flash Sale Helper"
+        android:text="Amzo auto buy"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 </LinearLayout>
